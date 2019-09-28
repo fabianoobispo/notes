@@ -2,11 +2,11 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/users/singin', (req, res) => {
-    res.send('entrar no app');
+    res.render('users/singin');
 });
 
 router.get('/users/singup', (req, res) => {
-    res.send('formulario de autenticacao');
+    res.render('users/singup');
 });
 
 
